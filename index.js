@@ -3,14 +3,21 @@ var express = require('express');
 var app = express();
 
 
+const port = 3000
+
 app.get('/', function (req, res) {
   res.send('Hello World!');
 });
 
-
+/*
 app.listen(5000, function () {
   console.log('Example app listening on port 5000!');
 });
+
+*/
+
+
+
 
 
 var fs = require("fs");
@@ -152,7 +159,7 @@ fs.writeFile("./data.json", JSON.stringify(myObj, null, 4), (err) => {
 
 
 
-
+app.listen(port, () => console.log(`Listening on port ${port}!`))
 
 
 
