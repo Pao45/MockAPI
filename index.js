@@ -130,12 +130,6 @@ var myObj = {
 
   };
 
-
-
-  
-
-
-
 //convert object to json string
 var myJSON = JSON.stringify(myObj);
 console.log(myJSON);
